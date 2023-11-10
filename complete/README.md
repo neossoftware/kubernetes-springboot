@@ -2,6 +2,7 @@ codebase: https://codelabs.developers.google.com/codelabs/cloud-springboot-kuber
 
 reference 1: https://spring.io/guides/gs/spring-boot-kubernetes/
 
+```
 ./mvnw -DskipTests spring-boot:run
 ./mvnw -DskipTests package
 
@@ -19,3 +20,4 @@ kubectl apply -f deployment.yaml
 kubectl apply -f deployment-service.yaml
 
 kubectl port-forward svc/springapp 8080:8080
+```
