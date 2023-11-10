@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: springapp
+  name: springapp
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: springapp
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: springapp
+    spec:
+      containers:
+      - image: neossoftware/springapp:1.0.0
+        name: springapp
+        resources: {}
+status: {}
